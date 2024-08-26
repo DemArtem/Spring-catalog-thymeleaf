@@ -14,9 +14,7 @@ public class FirmService {
   }
 
   public Firm save(Firm firm){
-      return 
-firmRepository.save
-(firm);
+      return firmRepository.save(firm);
 }
 public  Firm findById(Long id){
       return firmRepository.findById(id).get();

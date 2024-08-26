@@ -2,7 +2,6 @@ package org.itstep.smart;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -15,9 +14,7 @@ SmartRepo smartRepository;
     }
 
     public Smart save(Smart smart) {
-        return 
-smartRepository.save
-(smart);
+        return smartRepository.save(smart);
     }
 
     public Smart findById(Long id) {
